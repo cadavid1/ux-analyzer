@@ -1,0 +1,9 @@
+streamlit
+openai
+pillow
+opencv-python
+selenium
+webdriver-manager
+requests
+python-dotenv
+langchain-openai

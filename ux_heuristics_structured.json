@@ -1,0 +1,317 @@
+{
+  "01": {
+    "title": "People Don't Want to Work or Think More Than They Have To",
+    "checkpoints": [
+      {
+        "id": "01.01",
+        "text": "The system doesn't require more user work than needed.",
+        "description": "People will do the\u00a0least amount of work possible\u00a0to get a task done."
+      },
+      {
+        "id": "01.02",
+        "text": "They system shows the information in little bits (progressive disclosure).",
+        "description": "It is better to show people a little bit of information and let them choose if they want more details. The fancy term for this is progressive disclosure, which I wrote\u00a0a blog post\u00a0about recently."
+      },
+      {
+        "id": "01.03",
+        "text": "Examples are shown (additionally to descriptions).",
+        "description": "Instead of just describing things, show people an\u00a0example."
+      },
+      {
+        "id": "01.04",
+        "text": "The objects on the screen have right affordances; clickable things look clickable.",
+        "description": "Pay attention to the\u00a0affordance\u00a0of objects on the screen, page, or device you are designing. If something is clickable make sure it looks like it is clickable."
+      },
+      {
+        "id": "01.05",
+        "text": "The system doesn't provide more features to the user than needed.",
+        "description": "Only provide the\u00a0features that people really need. Don't rely on your opinion of what you think they need; do\u00a0user research\u00a0to actually find out. Giving people more than they need just clutters up the experience."
+      },
+      {
+        "id": "01.06",
+        "text": "Good default values are provided.",
+        "description": "Provide defaults.\u00a0Defaults let people do less work\u00a0to get the job done."
+      }
+    ]
+  },
+  "02": {
+    "title": "People Have Limitations",
+    "checkpoints": [
+      {
+        "id": "02.01",
+        "text": "In every moment, just the indispensable information is provided in the screen.",
+        "description": "People can only look at so much information or read so much text on a screen without\u00a0losing interest. Only provide the information that's needed at the moment (see progressive disclosure above)."
+      },
+      {
+        "id": "02.02",
+        "text": "The information is easy to scan.",
+        "description": "Make the information\u00a0easy to scan."
+      },
+      {
+        "id": "02.03",
+        "text": "Headers and short blocks of info or text are used.",
+        "description": "Use\u00a0headers\u00a0and\u00a0short blocks\u00a0of info or text."
+      },
+      {
+        "id": "02.04",
+        "text": "The system doesn't require the user to multi-task.",
+        "description": "People\u00a0can't multi-task.\u00a0The research\u00a0is very clear on this, so don't expect them to."
+      },
+      {
+        "id": "02.05",
+        "text": "Text lines have a suitable length: people prefer short ones, but they read better with longer ones.",
+        "description": "People prefer\u00a0short line lengths, but they\u00a0read better with longer ones! It's a conundrum, so decide whether preference or performance is more important in your case, but know that\u00a0people are going to ask for things that actually aren't best for them."
+      }
+    ]
+  },
+  "03": {
+    "title": "People Make Mistakes",
+    "checkpoints": [
+      {
+        "id": "03.01",
+        "text": "The system is prepared for user errors, anticipates what they will be, and tries to prevent them.",
+        "description": "Assume people will make mistakes.\u00a0Anticipate\u00a0what they will be and try to prevent them."
+      },
+      {
+        "id": "03.02",
+        "text": "User confirmation is required before committing actions with severe results in case of error.",
+        "description": "If the results of an error are severe then\u00a0use a confirmation\u00a0before acting on the user's action."
+      },
+      {
+        "id": "03.03",
+        "text": "It's easy to undo.",
+        "description": "Make it easy to \"undo.\""
+      },
+      {
+        "id": "03.04",
+        "text": "Errors are prevented rather than shown and corrected.",
+        "description": "Preventing errors from occurring is always better than helping people correct them once they occur.\u00a0The best error message is no message at all."
+      },
+      {
+        "id": "03.05",
+        "text": "Error-prone tasks are broken up into smaller chunks.",
+        "description": "If a task is error-prone,\u00a0break it up into smaller chunks."
+      },
+      {
+        "id": "03.06",
+        "text": "If the system can correct a user error, it does so and shows what it did.",
+        "description": "If the user makes an error and you can\u00a0correct it, then do so and show what you did."
+      },
+      {
+        "id": "03.07",
+        "text": "The development of the interface includes several iterations, user feedback and testing.",
+        "description": "Whoever is designing the UX makes errors too, so make sure that there is time and energy for iteration,\u00a0user feedback, and testing."
+      }
+    ]
+  },
+  "04": {
+    "title": "Human Memory Is Complicated",
+    "checkpoints": [
+      {
+        "id": "04.01",
+        "text": "The system is not fully based on user memories.",
+        "description": "People\u00a0reconstruct memories, which means they are always changing. You can trust what users say as the truth only a little bit. It is better to observe them in action\u00a0than to take their word for it."
+      },
+      {
+        "id": "04.02",
+        "text": "Users aren't required to remember things from one task to another.",
+        "description": "Memory is fragile. It degrades quickly and is subject to lots of errors.Don't make people remember things from one task to another\u00a0or one page to another."
+      },
+      {
+        "id": "04.03",
+        "text": "Users aren't required to remember more than 3-4 items at a time.",
+        "description": "People can only remember about 3-4 items at a time.\u00a0The \"7 plus or minus 2\" rule is\u00a0an urban legend. Research shows the real number is 3-4."
+      }
+    ]
+  },
+  "05": {
+    "title": "People are Social",
+    "checkpoints": [
+      {
+        "id": "05.01",
+        "text": "The system supports social uses of its features.",
+        "description": "People will always try to\u00a0use technology to be social. This has been true for thousands of years."
+      },
+      {
+        "id": "05.02",
+        "text": "Users can look to others for guidance or recommendation.",
+        "description": "People\u00a0look to others for guidance on what they should do, especially if they are uncertain. This is called\u00a0social validation. This is why, for example, ratings and reviews are so powerful on websites."
+      },
+      {
+        "id": "05.03",
+        "text": "The system takes advantage of multiple users doing some tasks at the same time.",
+        "description": "If people do something together at the same time (synchronous behavior)\u00a0it bonds them together\u2014there are actually chemical reactions in the brain. Laughter also bonds people."
+      },
+      {
+        "id": "05.04",
+        "text": "Before asking the users to do something, the system gives them something they want.",
+        "description": "If you do a favor for me then I will feel indebted to give you a favor back (reciprocity). Research shows that if you want people to fill out a form,\u00a0give them something they want and then ask for them to fill out the form, not vice versa."
+      },
+      {
+        "id": "05.05",
+        "text": "The system shows people doing something when the users are required to do it.",
+        "description": "When you watch someone do something, the same parts in your brain light up as though you were doing it yourself (called\u00a0mirror neurons). We are programmed with our biology to imitate. If you want people to do something then show someone else doing it."
+      },
+      {
+        "id": "05.06",
+        "text": "Social uses of the system are based in a maximum of 150 strong ties for a single user, but support thousands of weak ties.",
+        "description": "You can only have strong ties to 150 people. Strong ties are defined as ties that with people you are in close physical proximity to. But\u00a0weak ties can be in the thousands\u00a0and are very influential (\u00e0 la Facebook)."
+      }
+    ]
+  },
+  "06": {
+    "title": "Attention",
+    "checkpoints": [
+      {
+        "id": "06.01",
+        "text": "Users' attention is grabbed and held in the right moments; users aren't distracted when they are paying attention to something important.",
+        "description": "I am beginning to think that the whole idea of\u00a0attention is a key to designing an engaging UI. I'll write more in future articles about that. Grabbing and holding onto attention, and not distracting someone when they are paying attention to something, are key concerns."
+      },
+      {
+        "id": "06.02",
+        "text": "The system uses different or novel objects in the interface when it wants the user to pay attention.",
+        "description": "People are programmed to pay attention to anything that is\u00a0different or novel. If you make something different it will stand out."
+      },
+      {
+        "id": "06.03",
+        "text": "The system doesn't relies on users noticing every change in the interface.",
+        "description": "Having said that, people can actually miss changes in their visual field. This is called\u00a0change blindness. There are some quite humorous videos of people who start talking to someone on the street (who has stopped them and asked for directions) and then don't notice when the person actually changes!"
+      },
+      {
+        "id": "06.04",
+        "text": "To grab the attention, the system uses bright colors, large fonts, beeps and tones.",
+        "description": "You can use the senses to grab attention.\u00a0Bright colors, large fonts, beeps, and tones\u00a0will capture attention."
+      },
+      {
+        "id": "06.05",
+        "text": "The system doesn't unnecessarily distract users.",
+        "description": "People are easily distracted. If you don't want them to be distracted, don't flash things on the page or start videos playing. If, however, you do want to grab their attention, do those things."
+      }
+    ]
+  },
+  "07": {
+    "title": "People Crave Information",
+    "checkpoints": [
+      {
+        "id": "07.01",
+        "text": "The system takes advantage of users seeking (food, sex, information, etc.).",
+        "description": "Dopamine\u00a0is a chemical that makes people seek\u2026 food, sex,information. Learning is dopaminergic\u2014we can't help but want more information."
+      },
+      {
+        "id": "07.02",
+        "text": "The system provides more information to the users when they ask for it.",
+        "description": "People will often\u00a0want more information than they can actually process. Having more information makes people feel that they have more choices. Having more choices makes people feel in control. Feeling in control makes people feel they will survive better."
+      },
+      {
+        "id": "07.03",
+        "text": "The system provides enough feedback to tell the user what is going on.",
+        "description": "People need feedback. The computer doesn't need to tell the human that it is loading the file.\u00a0The human needs to know what is going on."
+      }
+    ]
+  },
+  "08": {
+    "title": "Unconscious Processing",
+    "checkpoints": [
+      {
+        "id": "08.01",
+        "text": "The system takes unconscious processing into consideration.",
+        "description": "Most\u00a0mental processing occurs unconsciously."
+      },
+      {
+        "id": "08.02",
+        "text": "When users are required to commit a large action, they are first required to commit a smaller one.",
+        "description": "If you can get people to commit to a small action (sign up for a free membership), then it is much more likely that they will\u00a0later commit to a larger action\u00a0(e.g., upgrade to a premium account)."
+      },
+      {
+        "id": "08.03",
+        "text": "The system uses food, sex and danger messages properly to grab user's attention.",
+        "description": "The old brain makes or at least has input into most of our decisions. The old brain cares about\u00a0survival and propagation: food, sex, and danger. That is why these three messages can grab our attention."
+      },
+      {
+        "id": "08.04",
+        "text": "Pictures of people and stories are used to induce emotional responses in the users.",
+        "description": "The\u00a0emotional\u00a0brain is affected by\u00a0pictures, especially pictures of people, as well as by\u00a0stories. The emotional brain has a huge impact on our decisions."
+      },
+      {
+        "id": "08.05",
+        "text": "The system uses unconscious content properly to affect users' behaviour.",
+        "description": "People's behavior is greatly affected by factors that they aren't even aware of. The words \"retired\", \"Florida,\" and \"tired\" can make even young people walk down the hall slower (called\u00a0framing)."
+      },
+      {
+        "id": "08.06",
+        "text": "The system takes users' unconscious decisions and users' rationalizations into consideration.",
+        "description": "Both the old brain and the emotional brain\u00a0act without our conscious knowledge. We will always ascribe a rational, conscious-brain reason to our decision, but it's never the whole reason why we take an action, and often the rational reason isn't even part of the reason."
+      }
+    ]
+  },
+  "09": {
+    "title": "People Create Mental Models",
+    "checkpoints": [
+      {
+        "id": "09.01",
+        "text": "The system takes users' mental models into account.",
+        "description": "People always have a\u00a0mental model\u00a0in place\u00a0about a certain object or task (paying my bills, reading a book, using a remote control)."
+      },
+      {
+        "id": "09.02",
+        "text": "Tasks are designed taking previous users' mental models of every task into account.",
+        "description": "The mental model that people have about a particular task may\u00a0make it easy or hard\u00a0to use an interface that you have designed."
+      },
+      {
+        "id": "09.03",
+        "text": "The system matches the users' mental model, or it teaches the users to have the right mental model of the system.",
+        "description": "In order to create a positive UX, you can either\u00a0match the conceptual model of your product or website to the users' mental model, or you can figure out how to \"teach\" the users to have a different mental model."
+      },
+      {
+        "id": "09.04",
+        "text": "Suitable metaphors are used to help users to get a conceptual model of the system.",
+        "description": "Metaphors help\u00a0users \"get\" a conceptual model. For example, \"This is just like reading a book.\""
+      },
+      {
+        "id": "09.05",
+        "text": "User research is done to get information about users' mental models.",
+        "description": "The most important reason to do\u00a0user research\u00a0is to get information about users' mental models."
+      }
+    ]
+  },
+  "10": {
+    "title": "Visual System",
+    "checkpoints": [
+      {
+        "id": "10.01",
+        "text": "Information is grouped to help focus and avoid cluttered interfaces.",
+        "description": "If pages are cluttered people can't find information.\u00a0Use grouping\u00a0to help focus where the eye should look."
+      },
+      {
+        "id": "10.02",
+        "text": "Related objects are close together.",
+        "description": "Things that are\u00a0close together are believed to \"go\" together."
+      },
+      {
+        "id": "10.03",
+        "text": "Fonts are large enough and easy to read.",
+        "description": "Make fonts large enough. Use fonts that are not too decorative so they are easy to read."
+      },
+      {
+        "id": "10.04",
+        "text": "The system takes peripheral vision into consideration; the visual environment of important objects in the interface is coherent with it.",
+        "description": "Research shows that people\u00a0use peripheral vision to get the \"gist\" of what they are looking at.\u00a0Eye tracking\u00a0studies are interesting, but just because someone is looking at something straight on doesn't mean they are paying attention to it."
+      },
+      {
+        "id": "10.05",
+        "text": "There is good color contrast; red text on a blue background or viceversa is not used.",
+        "description": "The hardest colors to look at together are red and blue.\u00a0Try to avoid red text on a blue background or vice versa."
+      },
+      {
+        "id": "10.06",
+        "text": "Pictures of objects are descriptive enough; usually they are better if they are slightly angled and have the perspective of being slightly above.",
+        "description": "People can recognize objects on a screen best when they are slightly angled and have the perspective of being slightly above (canonical perspective)."
+      },
+      {
+        "id": "10.07",
+        "text": "When color is used to show things that go together,  another way to show the same information is used.",
+        "description": "Color can be used to show whether things go together. Be sure to use another way to show the same info since some people are colorblind."
+      }
+    ]
+  }
+}
