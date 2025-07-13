@@ -75,6 +75,24 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+def get_api_key() -> str:
+    """Get API key from various sources in order of precedence"""
+    # 1. Check environment variable
+    api_key = os.getenv("OPENAI_API_KEY")
+    if api_key:
+        return api_key
+    
+    # 2. Check Streamlit secrets
+    try:
+        api_key = st.secrets["OPENAI_API_KEY"]
+        if api_key and api_key.strip():
+            return api_key
+    except KeyError:
+        pass
+    
+    # 3. Return session state key (may be empty)
+    return st.session_state.get("openai_api_key", "")
+
 def initialize_session_state():
     """Initialize session state variables"""
     if 'analysis_result' not in st.session_state:
@@ -83,6 +101,8 @@ def initialize_session_state():
         st.session_state.analyzer = UXAnalyzer()
     if 'analyzing' not in st.session_state:
         st.session_state.analyzing = False
+    if 'openai_api_key' not in st.session_state:
+        st.session_state.openai_api_key = get_api_key()
 
 def display_header():
     """Display the main header"""
@@ -196,8 +216,18 @@ def display_priority_issues(result: Dict[str, Any]):
         else:
             st.info("Analysis completed - check detailed results above.")
 
+def check_api_key():
+    """Check if API key is configured"""
+    if not st.session_state.openai_api_key:
+        st.error("Please configure your OpenAI API key in the sidebar first!")
+        return False
+    return True
+
 def analyze_image_upload():
     """Handle image upload and analysis"""
+    if not check_api_key():
+        return
+        
     if 'analyzing' not in st.session_state:
         st.session_state.analyzing = False
         
@@ -240,6 +270,9 @@ def analyze_image_upload():
 
 def analyze_video_upload():
     """Handle video upload and analysis"""
+    if not check_api_key():
+        return
+        
     st.subheader("🎥 Upload Video")
     uploaded_file = st.file_uploader(
         "Choose a video file",
@@ -275,6 +308,9 @@ def analyze_video_upload():
 
 def analyze_website_url():
     """Handle website URL analysis"""
+    if not check_api_key():
+        return
+        
     st.subheader("🌐 Website URL")
     url = st.text_input(
         "Enter website URL",
@@ -359,6 +395,34 @@ def main():
     # Sidebar for navigation
     with st.sidebar:
         st.header("Analysis Options")
+        
+        # API Key configuration with better help text
+        st.markdown("### OpenAI API Configuration")
+        api_key = st.text_input(
+            "OpenAI API Key",
+            value=get_api_key(),  # Use get_api_key() instead of session state
+            type="password",
+            placeholder="sk-...",
+            help="Enter your OpenAI API key. You can also set it via:\n"
+                 "1. Environment variable 'OPENAI_API_KEY'\n"
+                 "2. .streamlit/secrets.toml file",
+            key="openai_api_key"
+        )
+        
+        if api_key:
+            # Only update environment variable
+            os.environ["OPENAI_API_KEY"] = api_key
+            # Show success message if key is newly configured
+            if api_key != get_api_key():
+                st.success("API key updated!")
+        else:
+            existing_key = get_api_key()
+            if existing_key:
+                st.info("Using API key from environment/secrets")
+            else:
+                st.warning("Please configure your OpenAI API key")
+        
+        st.markdown("---")
         analysis_type = st.radio(
             "Choose analysis method:",
             ["📷 Image Upload", "🎥 Video Upload", "🌐 Website URL"]
